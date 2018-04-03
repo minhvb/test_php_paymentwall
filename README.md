@@ -69,3 +69,4 @@ To read feed content:
   bin/console minhvb:feed:read (arg1: id: required)
   ex:
   bin/console minhvb:feed:read 1
+  ```
