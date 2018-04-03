@@ -59,10 +59,12 @@ To delete feed:
   bin/console minhvb:feed:delete (arg1: id: required)
   ex:
   bin/console minhvb:feed:delete 1
+  ```
 
 To show feed list:
   ```
   bin/console minhvb:feed:list
+  ```
 
 To read feed content:
   ```
