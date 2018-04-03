@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: 3306
+    database_name: my_feed
+    database_user: root
+    database_password: 123456
+    mailer_transport: gmail
+    mailer_host: null
+    mailer_user: yourgmailuser@gmail.com
+    mailer_password: yourpassword
+    secret: ThisTokenIsNotSecretChangeIt

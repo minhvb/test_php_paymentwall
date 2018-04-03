@@ -1,0 +1,10 @@
+app_feed:
+    resource: "@AppBundle/Controller/FeedController.php"
+    type:     annotation
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+
+app.index:
+    resource: "@AppBundle/Controller/IndexController.php"
+    type: annotation

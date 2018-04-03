@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Feed creation</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <a class="btn btn-warning" href="{{ path('feed_index') }}">Back to the list</a>
+        <input class="btn btn-primary" type="submit" value="Create" />
+    {{ form_end(form) }}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Feed list</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Url</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for key, feed in feeds %}
+            <tr>
+                <td><a href="{{ path('feed_show', { 'id': feed.id }) }}">{{ key + 1 }}</a></td>
+                <td>{{ feed.title }}</td>
+                <td><a href="{{ feed.url }}">{{ feed.url }}</a></td>
+                <td>
+                    <a class="btn btn-primary" href="{{ path('feed_show', { 'id': feed.id }) }}">show</a>
+                    <a class="btn btn-primary" href="{{ path('feed_edit', { 'id': feed.id }) }}">edit</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a class="btn btn-primary" href="{{ path('feed_new') }}">Create a new entry</a>
+{% endblock %}
